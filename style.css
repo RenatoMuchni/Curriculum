@@ -1,0 +1,276 @@
+
+
+/* -- Fonte externa */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+/* -- SELETOR UNIVERSAL (opcional) */
+/* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -- SELETORES POR ELEMENTO */
+body {
+  font-family: 'Source Sans 3', sans-serif; 
+  font-weight: 300;
+  background-color: #1a1a2e;               
+  color: #e8e0d0;                           
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif; 
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f0c96e;                           
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;                       
+  color: #f0c96e;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0c96e55;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;                         
+  color: #e8e0d0;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #c9bfaf;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.3rem 0;
+  color: #c9bfaf;
+  font-size: 0.95rem;
+}
+
+a {
+  color: #f0c96e;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+figure {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+  color: #e8e0d0;
+}
+
+/* -- SELETOR POR ID */
+#nome-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+#foto-perfil {
+  border-radius: 50%;
+  border: 3px solid #f0c96e;
+  object-fit: cover;
+  box-shadow: 0 0 30px #f0c96e33;
+}
+
+#subtitulo {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #a89880;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  /* Decoração de texto */
+  text-decoration: underline;
+  text-decoration-color: #f0c96e55;
+  text-underline-offset: 4px;
+}
+
+/* -- SELETORES POR CLASSE */
+.curriculo-container {
+  max-width: 820px;
+  margin: 3rem auto;
+  background-color: #16213e;
+  border: 1px solid #f0c96e33;
+  box-shadow: 0 20px 60px #00000088;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 3.5rem;
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 60%, #1a1a2e 100%);
+  border-bottom: 2px solid #f0c96e44;
+}
+
+.secao {
+  padding: 2rem 3.5rem;
+  border-bottom: 1px solid #ffffff0f;
+}
+
+.secao:last-child {
+  border-bottom: none;
+}
+
+.item-experiencia {
+  margin-bottom: 1.8rem;
+  padding-left: 1rem;
+  border-left: 2px solid #f0c96e55;
+}
+
+.item-experiencia:last-child {
+  margin-bottom: 0;
+}
+
+.item-educacao {
+  padding-left: 1rem;
+  border-left: 2px solid #f0c96e55;
+}
+
+.item-educacao h3 {
+  margin-top: 1rem;
+}
+
+.item-educacao h3:first-child {
+  margin-top: 0;
+}
+
+.periodo {
+  font-size: 0.8rem;
+  font-style: italic;                     
+  color: #f0c96e;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+}
+
+.contato-lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0;
+}
+
+.habilidade-tag {
+  display: inline-block;
+  background-color: #0f3460;
+  border: 1px solid #f0c96e55;
+  color: #f0c96e;
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  text-transform: uppercase;
+}
+
+.ods-figura {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ods-descricao {
+  font-style: italic;
+  color: #a89880;
+  font-size: 0.9rem;
+  max-width: 280px;
+}
+
+/* SELETOR POR ATRIBUTO */
+
+a[href^="http"] {
+  color: #f0c96e;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+/* Estiliza imagens de ícone pelo atributo alt */
+img[alt="Telefone"],
+img[alt="Email"],
+img[alt="LinkedIn"],
+img[alt="GitHub"] {
+  opacity: 0.85;
+}
+
+/* -- SELETORES POR PSEUDO-CLASSE */
+
+/* -- Alterar cor de links ao passar o mouse */
+a:hover {
+  color: #ffd94a;
+  letter-spacing: 0.5px;
+}
+
+a[href^="http"]:hover {
+  text-decoration-color: #ffd94a;
+}
+
+/* Primeiro item da lista de habilidades */
+.habilidade-tag:first-child {
+  border-color: #f0c96e99;
+}
+
+/* Itens da lista de contato com hover */
+.contato-lista li:hover {
+  color: #e8e0d0;
+  padding-left: 0.3rem;
+  transition: padding-left 0.2s ease;
+}
+
+/* Links visitados */
+a:visited {
+  color: #c9a84c;
+}
+
+/* Foco para acessibilidade */
+a:focus {
+  outline: 2px solid #f0c96e;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Zebra nos itens de lista dentro de experiência */
+.item-experiencia ul li:nth-child(odd) {
+  color: #c9bfaf;
+}
+
+.item-experiencia ul li:nth-child(even) {
+  color: #b0a898;
+}
+
+/* ============================================
+   DETALHES FINAIS
+   ============================================ */
+.item-experiencia ul li::before,
+.item-educacao ul li::before {
+  content: '▸ ';
+  color: #f0c96e;
+  font-size: 0.75rem;
+}
