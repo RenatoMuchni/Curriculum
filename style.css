@@ -249,13 +249,6 @@ a:visited {
   color: #c9a84c;
 }
 
-/* Foco para acessibilidade */
-a:focus {
-  outline: 2px solid #f0c96e;
-  outline-offset: 3px;
-  border-radius: 2px;
-}
-
 /* Zebra nos itens de lista dentro de experiência */
 .item-experiencia ul li:nth-child(odd) {
   color: #c9bfaf;
