@@ -1,30 +1,28 @@
-
-
-/* -- Fonte externa */
+/* FONTE EXTERNA */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap');
 
-/* -- SELETOR UNIVERSAL (opcional) */
-/* {
+/* SELETOR UNIVERSAL*/
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* -- SELETORES POR ELEMENTO */
+/* SELETORES POR ELEMENTO */
 body {
-  font-family: 'Source Sans 3', sans-serif; 
+  font-family: 'Source Sans 3', sans-serif;
   font-weight: 300;
-  background-color: #1a1a2e;               
-  color: #e8e0d0;                           
+  background-color: #1a1a2e;
+  color: #e8e0d0;
   line-height: 1.7;
   min-height: 100vh;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif; 
+  font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
-  font-weight: 700;
-  color: #f0c96e;                           
+  font-weight: 700;           /* negrito */
+  color: #f0c96e;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -32,8 +30,7 @@ h1 {
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
-  font-weight: 400;
-  font-style: italic;                       
+  font-style: italic;         /* itálico */
   color: #f0c96e;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -43,16 +40,16 @@ h2 {
 }
 
 h3 {
-  font-family: 'Source Sans 3', sans-serif;
   font-size: 1rem;
-  font-weight: 600;                         
+  font-weight: 600;
   color: #e8e0d0;
   margin-bottom: 0.3rem;
 }
 
-p {
+p, li {
   font-size: 0.95rem;
   color: #c9bfaf;
+  padding: 0.3rem 0;
 }
 
 ul {
@@ -60,16 +57,9 @@ ul {
   padding: 0;
 }
 
-li {
-  padding: 0.3rem 0;
-  color: #c9bfaf;
-  font-size: 0.95rem;
-}
-
 a {
   color: #f0c96e;
   text-decoration: none;
-  font-weight: 400;
   transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
 
@@ -82,7 +72,7 @@ strong {
   color: #e8e0d0;
 }
 
-/* -- SELETOR POR ID */
+/* SELETORES POR ID */
 #nome-principal {
   display: flex;
   flex-direction: column;
@@ -97,24 +87,23 @@ strong {
 }
 
 #subtitulo {
-  font-family: 'Source Sans 3', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #a89880;
   letter-spacing: 5px;
   text-transform: uppercase;
-  /* Decoração de texto */
+  /* DECORAÇÃO DE TEXTO */
   text-decoration: underline;
   text-decoration-color: #f0c96e55;
   text-underline-offset: 4px;
 }
 
-/* -- SELETORES POR CLASSE */
+/* SELETORES POR CLASSE */
 .curriculo-container {
   max-width: 820px;
   margin: 3rem auto;
   background-color: #16213e;
-  border: 1px solid #f0c96e33;
+  border: 1px solid #f0c96e55;
   box-shadow: 0 20px 60px #00000088;
 }
 
@@ -162,7 +151,7 @@ strong {
 
 .periodo {
   font-size: 0.8rem;
-  font-style: italic;                     
+  font-style: italic;
   color: #f0c96e;
   letter-spacing: 1px;
   margin-bottom: 0.6rem;
@@ -172,7 +161,6 @@ strong {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.4rem 0;
 }
 
 .habilidade-tag {
@@ -202,17 +190,14 @@ strong {
   max-width: 280px;
 }
 
-/* SELETOR POR ATRIBUTO */
-
+/* SELETORES POR ATRIBUTO */
 a[href^="http"] {
-  color: #f0c96e;
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 3px;
   transition: text-decoration-color 0.3s ease;
 }
 
-/* Estiliza imagens de ícone pelo atributo alt */
 img[alt="Telefone"],
 img[alt="Email"],
 img[alt="LinkedIn"],
@@ -220,9 +205,9 @@ img[alt="GitHub"] {
   opacity: 0.85;
 }
 
-/* -- SELETORES POR PSEUDO-CLASSE */
+/* SELETORES POR PSEUDO-CLASSE */
 
-/* -- Alterar cor de links ao passar o mouse */
+/* ALTERAR COR DE LINKS AO PASSAR O MOUSE */
 a:hover {
   color: #ffd94a;
   letter-spacing: 0.5px;
@@ -232,35 +217,25 @@ a[href^="http"]:hover {
   text-decoration-color: #ffd94a;
 }
 
-/* Primeiro item da lista de habilidades */
+a:visited {
+  color: #c9a84c;
+}
+
 .habilidade-tag:first-child {
   border-color: #f0c96e99;
 }
 
-/* Itens da lista de contato com hover */
 .contato-lista li:hover {
   color: #e8e0d0;
   padding-left: 0.3rem;
   transition: padding-left 0.2s ease;
 }
 
-/* Links visitados */
-a:visited {
-  color: #c9a84c;
-}
-
-/* Zebra nos itens de lista dentro de experiência */
-.item-experiencia ul li:nth-child(odd) {
-  color: #c9bfaf;
-}
-
 .item-experiencia ul li:nth-child(even) {
   color: #b0a898;
 }
 
-/* ============================================
-   DETALHES FINAIS
-   ============================================ */
+/* Marcador dos itens de lista */
 .item-experiencia ul li::before,
 .item-educacao ul li::before {
   content: '▸ ';
