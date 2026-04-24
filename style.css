@@ -48,7 +48,6 @@ h2 {
 h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #e8e0d0;
   margin-bottom: 4.8px;
 }
 
@@ -79,7 +78,6 @@ figure {
 
 strong {
   font-weight: 600;
-  color: #e8e0d0;
 }
 
 /* SELETORES POR ID */
@@ -260,7 +258,6 @@ a:visited {
 }
 
 .contato-lista li:hover {
-  color: #e8e0d0;
   padding-left: 4.8px;
   transition: padding-left 0.2s ease;
 }
@@ -272,7 +269,6 @@ a:visited {
 /* Marcador dos itens de lista */
 .item-experiencia ul li::before,
 .item-educacao ul li::before {
-  content: '▸ ';
   color: #f0c96e;
   font-size: 12px;
 }
